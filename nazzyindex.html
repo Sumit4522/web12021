@@ -1,0 +1,198 @@
+<!doctype html>
+<html><head>
+	<!-- CSS Goes Here -->
+		<style>
+		header {
+			text-align: center;
+			padding: 2vh;
+		}
+		header h1 {
+			padding: 2vh;
+			margin: 0 auto;
+			background-color: palevioletred;
+			width: 60%;
+			color: black;
+			border-radius: 40px;
+		}
+		nav {
+			background-color: pink;
+			color: black;
+		}
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		nav li {
+			display: inline;
+		}
+		nav li a {
+			display: inline-block;
+			padding: 2.5vh 4vh;
+			color: black;
+			text-decoration: none;
+		}
+		nav li a:hover {
+			text-decoration: underline;
+			background-color: lightpink;
+			color: darkslateblue;
+		}
+		footer {
+			padding: 6vh;
+			text-align: center;
+			background-color: lightpink;
+			color: darkslateblue;
+		}
+		.container {
+			width: 80%;
+			margin: auto;
+		}
+
+		@media only screen and (max-width:700px) {
+			.container {
+				width: 100%;
+			}
+			nav li a {
+				display: block;
+			}
+
+		}
+
+
+		.flex-container {
+			display: flex;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			justify-content: center;
+			flex-wrap: nowrap;
+		}
+
+		.pageLinks h2 {
+			margin: 0;
+			padding: 1.5vh;
+			background-color: mediumpurple;
+			color: white;
+		}
+		.pageLinks ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		}
+
+		.pageLinks a {
+			display: block;
+			padding: 1.5vh;
+			text-decoration: none;
+			color: black;
+		}
+
+		.pageLinks a:hover {
+			background-color: paleturquoise;
+			color: darkslateblue;
+			text-decoration: underline;
+		}
+
+		.pageLinks {
+			width: 30%;
+			background-color: pink;
+
+		}
+
+		.assignmentDescriptions {
+			width: 70%;
+			background-color: palevioletred;
+			color: black;
+			padding: 2vh;
+		}
+
+
+		</style>
+
+	<!-- Put Link Tags Here -->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Web 2 / AWD Course Homepage</title>
+</head>
+
+<body>
+	<header>
+		<h1>Web 2 / AWD Course Homepage</h1>
+		<p>
+			NaZyia Thompson<br>
+			Web 2 / AWD 2nd Hour<br>
+			Feburuary 24, 2020
+		</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Nav Link</a></li>
+			<li><a href="#">Nav Link</a></li>
+			<li><a href="#">Nav Link</a></li>
+		</ul>
+
+	</nav>
+	<div class="container">
+	<!-- Put main page content here -->
+		
+	<div class="flex-container">
+	<div class="pageLinks">
+		<!-- Basic list of all assignments-->
+		<h2>General Page Templates</h2>
+		<ul>
+			<li><a href="#">Page Skeleton</a></li>
+			<li><a href="#">Bootstrap Skeleton</a></li>
+		</ul>
+		
+		<h2>Bootstrap</h2>
+		<ul>
+			<li><a href="#">Bootstrap Gallery</a></li>
+			<li><a href="#">Bootstrap Carousel</a></li>
+		</ul><!-- end of boostrap list-->
+		<h2>Blog Post Code Files</h2>
+		<h3>Group Blog Posts</h3>
+		<ul>
+			<li><a href="#" target="_blank">Group Post #1</a></li>
+			<li><a href="#" target="_blank">Group Post #2</a></li>
+			<li><a href="#" target="_blank">Group Post #3</a></li>
+			<li><a href="#" target="_blank">Group Post #4</a></li>
+		</ul>
+		<h3>My Blog Posts</h3>
+		<ul>
+			<li><a href="#">First Post</a></li>
+			<li><a href="#">Second Post</a></li>
+			<li><a href="#">Third Post</a></li>
+			<li><a href="#">Fourth Post</a></li>
+		</ul>
+        <h2>Other Assignments</h2>
+		<ul>
+			<li><a href="#">FHS Program Page</a></li>
+		</ul>
+	</div><!-- End of page links-->	
+
+	<div class="assignmentDescriptions">
+		<!-- Flexbox display of assignments-->
+		<div class="assignment" id="#">
+			<h4>Assignment Name</h4>
+			<p>
+				Description
+			</p>
+			<h4><a href="#" target="_blank">Link</a></h4>
+
+		</div>
+
+	</div>
+	</div><!-- End of flex container-->
+	</div><!-- Close of Container -->
+	<footer>
+		FHS Web Design
+	</footer>
+
+
+
+</body>
+</html>
+
+
