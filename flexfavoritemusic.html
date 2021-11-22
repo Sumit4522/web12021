@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+ 
+  <head>
+   
+    <!--Nonvisible elements in this section -->
+   
+    <!-- CSS Goes here in STYLE tags -->
+   
+    <style>
+     
+      *{
+       
+        margin: 0;
+       
+        padding: 0;
+       
+        box-sizing: border-box;
+      }
+     
+      header{
+       
+        color:black;
+       
+        background:white;
+       
+        text-align: center;
+      }
+     
+      nav {
+       
+        color:white;
+       
+        background:black;
+       
+        padding: 2vh;
+      }
+     
+      footer{
+       
+        color:white;
+       
+        background:black;
+       
+        padding: 2vh;
+       
+        height:10vh;
+      }
+     
+      .container{
+       
+        min-height:70vh;
+       
+        color:black;
+       
+        background:lightgreen;
+       
+        padding: 2vh;
+       
+        width:80%;
+       
+        margin:auto;
+       
+      }
+     
+      .flex-container{
+       
+        display:flex;
+       
+        flex-direction:column;
+       
+      }
+     
+      .row{
+       
+        display:flex;
+       
+        flex-direction:row;
+       
+        flex-wrap:nowrap;
+       
+        background:white;
+       
+        margin:1vh auto;
+       
+        width:100%;
+      }
+     
+      .row-item{
+       
+        flex-basis:100%;
+       
+        text-align:center;
+       
+        min-height:30vh;
+       
+        margin:1vh;
+       
+        border:1px black solid;
+      }
+     
+      .row-item h3{
+       
+        padding:1.5rem;
+       
+        font-size:1.5rem;
+       
+        background:orange;
+       
+      }
+     
+      .row-item p{
+       
+        font-size:1.15rem;
+       
+        color:green;
+       
+        padding:1rem;
+      }
+     
+      .row-movie{
+       
+        height:25vh;
+       
+        background:black;
+      }
+     
+      .flex-container h2{
+       
+        font-size:2rem;
+       
+        padding:1rem;
+      }
+     
+      .row-movie iframe{
+       
+        display:block;
+       
+        width:100%;
+       
+        height:100%;
+      }
+     
+    </style>
+   
+    <!-- title tag for browser tab text -->
+   
+    <title>Flexbox Favorite Music</title>
+ 
+  </head>
+ 
+ 
+  <body>
+   
+    <header>
+     
+      <h1>FlexBox Rows: Favorite Music</h1>
+     
+      <p>
+       
+        Sumit Das<br>
+       
+        November 15, 2021<br>
+       
+        Web 1, 4th Hour
+       
+      </p>
+     
+    </header>
+   
+    <nav>
+     
+      Nav Section
+     
+    </nav>
+   
+    <div class="container">
+     
+      <!-- Main page content here -->
+     
+      <div class="flex-container">
+       
+        <h2>Drake--Hip Hop/Rap</h2>
+       
+        <!--start row 1-->
+       
+        <div class="row">
+         
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xpVfcZ0ZcFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+             
+            </div>
+           
+            <h3>Gods Plan</h3>
+           
+            <p>
+             
+              This song  was a big hit in 2018. This song was dedicated to poor families. In the music video above  Drake goes around the community and gives big donations to families and there is also a part in the video where he goes to a local grocery shop and says that he will be paying for everyones groceries. He is tryna show that God has a plan.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/THVbtGqEO1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Fair Trade</h3>
+           
+            <p>
+              This song is about a fair trade with things in life. Drake raps about how he would trade his friends for peace. Also other things he would trade in his life for peace.
+              
+            
+             
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JFm7YDVlqnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Laugh Now Cry Later</h3>
+           
+            <p>
+             
+              This song is about to not to stress about the little things. To not feed yourself to your own stress, but to laugh now but cry later.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+         
+        </div><!--End row-->
+       
+        <h2>Lil Baby--HIP HOP/RAP</h2>
+       
+        <!--start row 2-->
+       
+        <div class="row">
+         
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BTivsHlVcGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Every Chance I Get </h3>
+           
+            <p>
+             
+              This song is about how everytime he gets a opportunity to do something great he will take it.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GErG9femMQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>We paid</h3>
+           
+            <p>
+             
+              In this song he talks about his money. He talks about how he is paid and that he is really successful.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_VDGysJGNoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Bigger Picture</h3>
+           
+            <p>
+             
+              This song was written about the current riots and BLM protests that was going on at the time.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+         
+        </div><!--End row-->
+       
+        <h2>Roddy Rich--HIP HOP/RAP</h2>
+       
+        <!--start row 3-->
+       
+        <div class="row">
+         
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+             
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/sJDRfZJFAk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+           
+            <h3>Late at night</h3>
+           
+            <p>
+             
+              This song is about being with your loved one late at night.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CJOZc02VwJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Down Below</h3>
+           
+            <p>
+             
+              This song is about starting from the bottom and working your way up.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iGU66wsjIPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>High Fashion</h3>
+           
+            <p>
+             
+              This song is about having good clothes and looking nice.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+         
+        </div><!--End row-->
+       
+        <h2>Post Malone--Hip Hop/Rap</h2>
+       
+        <!--start row 4-->
+       
+        <div class="row">
+         
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SC4xMk98Pdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Congratulations</h3>
+           
+            <p>
+             
+              This song is about success, and he desribes how people treats us when we ourselfs find success.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gk0nB9vvYfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>I Fall Apart</h3>
+           
+            <p>
+             
+              In this song he talks about heart break. He describes the exact feeling.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+          <div class="row-item">
+           
+            <div class="row-movie">
+             
+              <!--iframe from youtube will go here-->
+              <iframe src="https://www.youtube.com/embed/gxXCfSN3YYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+            </div>
+           
+            <h3>Goodbyes</h3>
+           
+            <p>
+             
+              This song is about goodbyes. He describes the feeling of saying goodbyes to our loved ones.
+             
+            </p>
+           
+           
+          </div><!--End row items-->
+         
+         
+        </div><!--End row-->
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+      </div><!--End flex Container -->
+     
+     
+    </div><!--closing tag for container-->
+   
+    <footer>
+     
+      Footer
+     
+    </footer>
+   
+   
+    <!--Don't delete these but do paste them -->
+ 
+  </body>
+
+</html>
