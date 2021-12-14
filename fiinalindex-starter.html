@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+	<!-- CSS Will go under Here in STYLE Tags -->
+	<style>
+        /* CSS Variables for Color */
+        :root {
+            --mainbg:white;
+            --lightbg: #b6aeae;
+            --headercolor: white;
+            --navcolor:#001d3d;
+            --lighttext: #ffffff;
+            --darktext: black;
+            --footercolor: #001d3d;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+		.header {
+			padding: 1vh;
+			text-align: center;
+		}
+		.header h1 {
+			color: black;
+			width: 60%;
+			margin: 1vh auto;
+			padding: 1vh;
+		}
+		.nav {
+			background: #DC143C;
+			color: #8B0000;
+			padding: 2vh;
+		}
+		.footer {
+			background: #DC143C;
+			color: var(--lighttext);
+			padding: 2vh;
+			min-height: 10vh;
+		}
+		.container {
+			background: #8B0000;
+			padding: 1vh;
+			min-height: 60vh;
+			width: 80%;
+			margin: auto;
+		}
+        /* New CSS Goes Under Here */
+       .jumbotron {
+          height: 50vh;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+       
+       .jumbotron img {
+          width: 100%;
+          display: block;
+          filter: brightness(.7) blur(3px);
+       }
+       .jumbotron-inner{
+           position:absolute;
+           text-align: center;
+           background: rgba(0, 0, 0, .4);
+           width: 60%;
+           height: 60%;
+           color: var(--lighttext);
+           border-radius: 16px;
+       }
+      .jumbotron-inner > * {
+          padding: 1vh;
+          margin: 1vh;
+      }
+      .jumbotron-inner h1 {
+          font-size: 3rem;
+      }
+      .jumbotron-inner p {
+          font-size: 1.5rem;
+          line-height:2.15rem;
+      }
+      /*Container flex setup for rows */
+      .container {
+           display: flex;
+           flex-flow:column nowrap;
+          
+      }
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        /* Since these are items in the container */
+        width: 100%
+        justify-content: center;
+        align-items: center;
+        background: beige;
+      }
+      .section-header {
+         width: 100%;
+         padding: 2vh;
+         font-size: 2rem;
+         background:#DC143C;
+         color: White;
+         border-bottom: 1px black solid;
+         margin: 1vh auto;
+      }
+      .flex-item {
+          flex-basis: 30%;
+          min-width:200px;
+          padding: 1vh;
+          margin: 1vh auto;
+          text-align: center;
+      }
+      .flex-item a {
+          display: block;
+          text-decoration: none;
+          color: var(--darktext);
+          border-radius: 8px;
+          overflow:hidden;
+      }
+      .flex-item a:hover {
+        box-shadow: 6px 8px 6px 3px rgba(0,0,0,0.32);
+      
+          
+      }
+      .item-image {
+          width: 100%;
+          height: 25vh;
+          background: white;
+          overflow: hidden;
+      }
+      .item-image img{
+        display: block;
+        height: 100%;
+        margin: auto;
+      }
+      .item-heading {
+          background: #DC143C;
+          color: white;
+          font-size: 1.5rem;
+          padding: 1vh;
+      }
+      .item-text {
+          width: 100%;
+          min-height:15vh;
+          background: var(--lightbg);
+          padding: 1.25vh;
+      }
+          
+      
+
+
+
+	</style>
+
+    <!-- Link tags go here for external css -->
+
+
+    <!-- Responsive meta tag for viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+	<title>Web 1 Final Index - LASTNAME</title>
+
+</head>
+<body>
+	<header>
+		
+	</header>
+	<nav>
+		Placeholder
+	</nav>
+    <div class="jumbotron">
+        <img src="https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg" alt="#">
+        <div class="jumbotron-inner">
+            <h1>Web Design Homepage</h1>
+            <p>
+                Sumit Das<br>
+                Web 1, 1st Hour<br>
+                12/13/21
+            </p>
+        </div>
+    </div>
+	<div class="container">
+		<!-- Put assignment specific code here -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Page Skeletons</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="skeleton1.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://charatoon.com/photo/5497.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.1
+                </div>
+                <div class="item-text">
+                    First ever skeleton, very basic can't really do much with it.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="skeleton2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://charatoon.com/photo/5492.png" alt="#">
+                </div>
+                <div class="item-heading">
+                    Skeleton v.2
+                </div>
+                <div class="item-text">
+                    Second skeleton, we use this skeleton very often. Very nice basic skeleton.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="#" target="_blank">
+                <div class="item-image">
+                    <img src="https://cdn.w600.comps.canstockphoto.com/cartoon-skeleton-thumbs-up-sign-eps-vector_csp39812481.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Final Skeleton
+                </div>
+                <div class="item-text">
+                    Very advanced skeleton, basically this page.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Basic HTML/CSS Assignments</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="favoritemovie.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://static.wikia.nocookie.net/baki/images/e/e7/Baki_profile.png/revision/latest?cb=20190126141836" alt="#">
+                </div>
+                <div class="item-heading">
+                    Favorite Movie v.2
+                </div>
+                <div class="item-text">
+                    Simple website we made to describe our favorite movie/ TV series.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="html.favortiefood.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://howtofeedaloon.com/wp-content/uploads/2020/06/gryo-instagram.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    HtML Favorite Food v.3
+                </div>
+                <div class="item-text">
+                    Nice basic website desrcibing our favorite foods.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="streamingpage2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449500_rd.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    HTML Streaming Assignment
+                </div>
+                <div class="item-text">
+                    A basic website explaining our top 5 streaming sites.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="Shoppinglist2.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://www.usnews.com/dims4/USNEWS/53cd442/2147483647/crop/2000x1313%2B0%2B0/resize/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F39%2Fc6%2Fa7a32a184af18c01b1d1232a15d2%2F190816-groceryshopping-stock.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Updated Shopping List
+                </div>
+                <div class="item-text">
+                    Basic website about what we shop for when we go to the grocery store.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">CSS Flexbox</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="STREAMINGv3.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/streaming-services-guide-1618259319.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Streaming v.3
+                </div>
+                <div class="item-text">
+                    More updated version of our favorite streaming sites, we use flex row format.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="NFLteams.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://thumbs.dreamstime.com/z/saint-petersburg-russia-may-logo-all-national-football-league-teams-nfl-team-icons-set-all-new-football-teams-logos-vector-217811703.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox NFL/Sports Assignment
+                </div>
+                <div class="item-text">
+                    Basic website about NFL Teams.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            <div class="flex-item">
+                <a href="flexfavoritemusic.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://townsquare.media/site/812/files/2021/05/J-Cole.jpg" alt="#">
+                </div>
+                <div class="item-heading">
+                    Flexbox Music
+                </div>
+                <div class="item-text">
+                    Basic website about our favorite artists and songs.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+        <!-- Start of a page section-->
+        <h3 class="section-header">Full Websites</h3>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <a href="fiinalindex-starter.html" target="_blank">
+                <div class="item-image">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHFcMYlm_SeNA/company-logo_200_200/0?e=2159024400&v=beta&t=iw7dSBJ7LRz9HEBTjm8HtDOuxK-8czQV_W-v-q-SsyM" alt="#">
+                </div>
+                <div class="item-heading">
+                    First Full Website
+                </div>
+                <div class="item-text">
+                    Advanced website where we have to put all of the websites we made.
+                </div>
+                </a>
+            </div><!-- End Flex Item-->
+
+
+            
+
+
+
+        </div><!-- End Flex Container -->
+
+        <!-- End of a page section -->
+
+
+
+
+
+
+	</div><!-- End of the container -->
+	<footer>
+		Made in FHS Web Design
+	</footer>
+
+
+    <!-- JavaScript will go under here-->
+
+
+
+
+
+
+
+    
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>
